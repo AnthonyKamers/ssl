@@ -13,7 +13,7 @@ module.exports = app;
 
 // for development and debugging
 if (require.main === module) {
-    require('http').createServer(app).listen(3000, function () {
+    require('http').createServer(app).listen(80, function () {
         console.info("Listening for HTTP on", this.address());
     });
 }
